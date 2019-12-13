@@ -50,9 +50,9 @@ Flow.Flow.AccountStatusAutomation.19.Choice.Cancel.FieldLabel	Cancel	Abbruch	-
 The script is able to harmonize single files as well as entire directories containing a collection of stf files.
 To harmonize a single stf file use the following command:
 ```
->harmonize-flow-translations.py -f [FILENAME]
+harmonize-flow-translations.py -f [FILENAME]
 ```
 To harmonize a collection of stf files within a directory use the following command:
 ```
->harmonize-flow-translations.py -d [DIRECTORY]
+harmonize-flow-translations.py -d [DIRECTORY]
 ```
