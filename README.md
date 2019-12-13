@@ -3,12 +3,12 @@ A small python script that harmonizes heterogeneous Salesforce flow translations
 
 Move from a bilingual stf file exported from Salesforce with diffferent flow versions to a new file containing only the latest flow translations with harmonized flow versions.
 
-#Example input file:
+## Example input file:
+```
 Language code: de
 Type: Bilingual
 
 ------------------TRANSLATED-------------------
-
 Flow.Flow.AutomateCases.1.Name	Case Automation	Automatisierung Kundenvorgang	-
 Flow.Flow.AutomateCases.10.Name	Case Automation	Automatisierung Kundenvorgang	-
 Flow.Flow.AutomateCases.11.Name	Case Automation	Automatisierung Kundenvorgang	-
@@ -28,8 +28,9 @@ Flow.Flow.AutomateCases.10.Choice.ExistingBusiness.FieldLabel	Existing Business	
 Flow.Flow.AutomateCases.9.Choice.ExistingBusiness.FieldLabel	Business	Geschäft	-
 Flow.Flow.AutomateCases.9.Choice.RampUpBusiness.FieldLabel	Ramp Up	Zusatzgeschäft	-
 Flow.Flow.AutomateCases.4.Choice.RampUpBusiness.FieldLabel	Ramp Up	Geschäft	-
-
-#Example output file:
+```
+## Example output file:
+```
 Language code: de
 Type: Bilingual
 
@@ -43,8 +44,9 @@ Flow.Flow.AccountStatusAutomation.19.Choice.Identify.FieldLabel	Identify	Identif
 Flow.Flow.AccountStatusAutomation.19.Choice.Propose.FieldLabel	Propose	Angebot	-
 Flow.Flow.AccountStatusAutomation.19.Choice.Close.FieldLabel	Close	Schließen	-
 Flow.Flow.AccountStatusAutomation.19.Choice.Cancel.FieldLabel	Cancel	Abbruch	-
+```
 
-#Usage
+# Usage
 The script is able to harmonize single files as well as entire directories containing a collection of stf files.
 To harmonize a single stf file use the following command:
 >harmonize-flow-translations.py -f [FILENAME]
