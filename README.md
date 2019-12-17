@@ -56,3 +56,6 @@ To harmonize a collection of stf files within a directory use the following comm
 ```
 harmonize-flow-translations.py -d [DIRECTORY]
 ```
+
+# Disclaimer
+Even though this script was extensively tested, use it at your own risk. 
